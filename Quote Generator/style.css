@@ -666,25 +666,34 @@ button,
 .window-footer {
   background: var(--bg-card);
   border-top: 1px solid var(--border-light);
-  padding: 0.65rem 1.4rem;
+  padding: 0.75rem 1.4rem;
   font-size: 0.78rem;
   color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.85rem;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem;
+  min-height: 44px;
+  box-sizing: border-box;
 }
 
 .footer-creator {
+  display: inline-flex;
+  align-items: center;
   font-size: 0.78rem;
   color: var(--text-muted);
   white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .creator-link {
   color: var(--primary-blue);
   font-weight: 600;
   text-decoration: none;
+  margin-left: 0.25rem;
   transition: color var(--trans-fast), text-decoration-color var(--trans-fast);
 }
 
@@ -694,14 +703,26 @@ button,
 }
 
 .footer-info {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-end;
   gap: 0.65rem;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .footer-dot {
   color: var(--border-medium);
+  user-select: none;
+}
+
+.keyboard-tip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  line-height: 1;
 }
 
 .keyboard-tip kbd {
@@ -711,10 +732,13 @@ button,
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
   font-size: 0.72rem;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .tip-desktop {
-  display: inline;
+  display: inline-flex;
 }
 
 .tip-mobile {
@@ -893,7 +917,7 @@ button,
 
   .window-footer {
     padding: 0.7rem 0.85rem;
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 0.35rem;
     text-align: center;
   }
