@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge with Smooth Rounded Corners -->
+  <rect width="64" height="64" rx="16" fill="url(#quoteGrad)" />
+  <!-- Crisp Stylized Quotation Marks -->
+  <path d="M16 34c0-7 4.5-12 11-13l1.5 4c-4.2 1-6.5 4-7 7.5H27c2.2 0 4 1.8 4 4v9c0 2.2-1.8 4-4 4h-7c-2.2 0-4-1.8-4-4v-7.5zm18 0c0-7 4.5-12 11-13l1.5 4c-4.2 1-6.5 4-7 7.5H45c2.2 0 4 1.8 4 4v9c0 2.2-1.8 4-4 4h-7c-2.2 0-4-1.8-4-4v-7.5z" fill="#ffffff" />
+</svg>
