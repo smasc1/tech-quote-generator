@@ -669,6 +669,28 @@ button,
   padding: 0.65rem 1.4rem;
   font-size: 0.78rem;
   color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.footer-creator {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.creator-link {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--trans-fast), text-decoration-color var(--trans-fast);
+}
+
+.creator-link:hover {
+  color: var(--primary-blue-hover);
+  text-decoration: underline;
 }
 
 .footer-info {
@@ -870,12 +892,20 @@ button,
   }
 
   .window-footer {
-    padding: 0.65rem 0.85rem;
+    padding: 0.7rem 0.85rem;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+
+  .footer-creator {
+    font-size: 0.75rem;
   }
 
   .footer-info {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   .tip-desktop {
